@@ -17,7 +17,16 @@ grafana will immediately plot some data using its own embedded default data sour
 
 ## import today's sales into the graph
 
-select the datasource that hosts your sales data. In our example, the datasource is named `metrics-frontdoor`
+replace the default datasource with the datasource hosting your sales data. 
+
+  - In our example:  
+ ```metrics-frontdoor```
+
+
+replace the default query with the query that extracts sales data. 
+
+  - In our example:  
+ ```SELECT mean("Stores_Sales_Cafe_Level2") FROM "Task_mips_store" WHERE ("_blossom_id" = 'CI02838708') AND $timeFilter GROUP BY time($__interval) fill(null)```
 <img src="/images/widgets.png" width=70% height=70%>
 
 
