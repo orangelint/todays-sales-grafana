@@ -17,6 +17,10 @@ grafana will immediately plot some data using its own embedded default data sour
 
 ## import today's sales into the graph
 
+select the datasource that hosts your sales data. In our example, the datasource is named `metrics-frontdoor`
+<img src="/images/default-datasource.png" width=50% height=50%>
+
+
 ## import today's forecasted sales into the graph
 
 ## label and color the sales datasets
