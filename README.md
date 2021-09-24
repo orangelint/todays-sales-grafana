@@ -1,6 +1,6 @@
 ## today's sales data
 
-A guide to creating grafana graphs that display today's sales
+A guide to creating grafana graphs that display current day sales and remaining forecast. 
 
 ## assumptions
 
@@ -27,7 +27,7 @@ replace the default query with the query that extracts your sales data.
 
   - In our example:  
  ```SELECT mean("Stores_Sales_Cafe_Level2") FROM "Task_mips_store" WHERE ("_blossom_id" = 'CI02838708') AND $timeFilter GROUP BY time($__interval) fill(null)```
-<img src="/images/forecast.png" width=70% height=70%>
+<img src="/images/widgets.png" width=70% height=70%>
 
 
 ## import today's forecasted sales into the graph
@@ -51,9 +51,9 @@ On upper right of your dashboard, expand "Show options" feature and update the f
   -Under "Series Overrides", add "Change Color to "forecast (select orange). 
 
 Your sales data now is complete and connected with today's forecast finishing the day
-
+<img src="/images/today.png" width=70% height=70%>
 
 ## zoom out your sales data (for funzies!) 
 
-
+<img src="/images/24hr.png" width=70% height=70%>
 
