@@ -4,8 +4,8 @@ A guide to creating grafana graphs that display today's sales
 
 ## assumptions
 
-you have a grafana instance running\
-data sources that host your sales totals are added to your running grafana instance 
+1)  you have a grafana instance running
+2)  data sources that host your sales totals are added to your running grafana instance 
 
 ## add a blank graph
 
