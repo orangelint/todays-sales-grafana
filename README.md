@@ -23,7 +23,7 @@ replace the default datasource with the datasource hosting your sales data.
  ```metrics-frontdoor```
 
 
-replace the default query with the query that extracts sales data. 
+replace the default query with the query that extracts your sales data. 
 
   - In our example:  
  ```SELECT mean("Stores_Sales_Cafe_Level2") FROM "Task_mips_store" WHERE ("_blossom_id" = 'CI02838708') AND $timeFilter GROUP BY time($__interval) fill(null)```
