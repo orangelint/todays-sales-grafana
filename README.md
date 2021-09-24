@@ -9,7 +9,11 @@ data sources that host your sales totals are added to your running grafana insta
 
 ## add a blank graph
 
+after logging into grafana, on left hand side click "+", then "Add new panel" 
 <img src="/images/add-blank-graph.png" width=50% height=50%>
+
+grafana will immediately plot some data using its own embedded default data source _(just to make you feel good)_
+<img src="/images/default-datasource.png" width=50% height=50%>
 
 ## import today's sales into the graph
 
