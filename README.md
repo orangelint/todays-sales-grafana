@@ -26,7 +26,7 @@ replace the default datasource with the datasource hosting your sales data.
 replace the default query with the query that extracts your sales data. 
 
   - In our example:  
- ```SELECT FORECAST(mean("Stores_Sales_Cafe_Level2"), 'xgb', 24h, 3) FROM "Task_mips_store" WHERE ("_blossom_id" = 'CI02838708') AND time > now() - 4d GROUP BY time(5m) fill(null)```
+ ```SELECT mean("Stores_Sales_Cafe_Level2") FROM "Task_mips_store" WHERE ("_blossom_id" = 'CI02838708') AND $timeFilter GROUP BY time($__interval) fill(null)```
 <img src="/images/forecast.png" width=70% height=70%>
 
 
@@ -35,10 +35,25 @@ replace the default query with the query that extracts your sales data.
 add another query (same datasource) that uses xgboost to forecast the remainder of the day
 
   - In our example:  
-```
-<img src="/images/forecast.png" width=50% height=50%>
+```SELECT FORECAST(mean("Stores_Sales_Cafe_Level2"), 'xgb', 24h, 3) FROM "Task_mips_store" WHERE ("_blossom_id" = 'CI02838708') AND time > now() - 4d GROUP BY time(5m) fill(null)```
+<img src="/images/forecast.png" width=70% height=70%>
 
 ## label and color the sales datasets
 
+On upper right of your dashboard, expand "Show options" feature and update the following: 
+
+  -Under "Settings", click "show options", add a title to your panel: "WIDGETS"   
+
+  -Under "Display", set "Null value" to "connected"   
+
+  -Under "Series Overrides", add "Change Color" to "widgets" (select white). 
+
+  -Under "Series Overrides", add "Change Color to "forecast (select orange). 
+
+Your sales data now is complete and connected with today's forecast finishing the day
+
+
 ## zoom out your sales data (for funzies!) 
+
+
 
