@@ -9,6 +9,8 @@ data sources that host your sales totals are added to your running grafana insta
 
 ## add a blank graph
 
+![select_ds]({{< md_image img="/images/add-blank-graph.png?width=60pc">}})
+
 ## import today's sales into the graph
 
 ## import today's forecasted sales into the graph
