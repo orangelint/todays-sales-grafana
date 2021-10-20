@@ -58,6 +58,6 @@ Your sales data now is complete and connected with today's forecast finishing th
 click on the date picker in the upper right hand corner and set timings to 12 hours in past, and 12 hours in future.   
 <img src="/images/datepicker.png" width=20% height=20%>
 
-tada! now you have a 24 hour chart of past and projected sales! 
+## tada! now you have a 24 hour chart of past and projected sales! 
 <img src="/images/24hr.png" width=90% height=90%>
 
