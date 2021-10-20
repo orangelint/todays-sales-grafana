@@ -53,7 +53,7 @@ On upper right of your dashboard, expand "Show options" feature and update the f
 Your sales data now is complete and connected with today's forecast finishing the day
 <img src="/images/today.png" width=70% height=70%>
 
-## zoom out your sales data (for funzies!) 
+## zoom out your sales data (for funzies!)   
 
 click on the date picker in the upper right hand corner and set timings to 12 hours in past, and 12 hours in future. 
 <img src="/images/datepicker.png" width=20% height=20%>
