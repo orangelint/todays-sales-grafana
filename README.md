@@ -12,7 +12,7 @@ A guide to creating grafana graphs that display current day sales and remaining 
 after logging into grafana, on left hand side click "+", then "Add new panel" 
 <img src="/images/add-blank-graph.png" width=50% height=50%>
 
-grafana will immediately plot some data using its own embedded `default` data source _(just to make you feel good)_
+grafana will immediately plot some data using its own embedded `default` data source _(just to make you feel good)_   
 <img src="/images/default-datasource.png" width=50% height=50%>
 
 ## import today's sales into the graph
